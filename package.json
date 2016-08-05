@@ -1,0 +1,25 @@
+{
+  "name": "ng-landing-page",
+  "version": "1.0.0",
+  "description": "Angular 1 + .net core.",
+  "main": "Program.cs",
+  "keywords": [
+    ".net",
+    "angular",
+    "fullstack"
+  ],
+  "author": "Nigel Gilbert",
+  "license": "MIT",
+  "eslintConfig": {
+    "env": {
+      "es6": true
+    }
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "eslint": "^2.0.0",
+  }
+}

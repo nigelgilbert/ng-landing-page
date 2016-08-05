@@ -1,0 +1,30 @@
+.is-favorited {
+  color: #cc9900;
+}
+
+.favorite-button {
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  z-index: 3;
+  right: 5px;
+  top: 158px;
+  border: 0px;
+  background: none;
+  line-height: 34px;
+  color: rgba(0,0,0,.7);
+  font-size: 16px;
+}
+
+.favorite-button:hover {
+  border-radius: 2px;
+  background-color: rgba(0,0,0,.1);
+}
+
+.favorite-button:focus {
+  outline: 0;
+}
+
+.active {
+  transform: scale(.8);
+}

@@ -1,0 +1,18 @@
+#dashboard-search {
+  height: 38px;
+  width: 100%;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid rgba(0,0,0,.35);
+  border-radius: 1px;
+}
+
+#dashboard-header {
+  color: rgba(0,0,0,.65);
+}
+
+.dashboard-subtitle {
+  color: rgba(0,0,0,.65);
+  margin-bottom: -5px;
+  margin-top: 20px;
+}
