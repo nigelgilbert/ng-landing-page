@@ -1,0 +1,35 @@
+body {
+  background-color: #EEEEEE;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.centered {
+  min-width: 480px;
+  margin: auto;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+ .centered {
+    width: 480px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+ .centered {
+    width: 768px;
+  }
+}
+
+/* Medium Devices and up, Desktops */
+@media only screen and (min-width : 992px) {
+ .centered {
+    width: 992px;
+    margin: auto;
+  }  
+}

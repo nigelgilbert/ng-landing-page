@@ -1,0 +1,9 @@
+<div class="card-container">
+  <div class="card ng-click="$ctrl.redirect($event)">
+    <img class="card-image" ng-src="{{$ctrl.imageUrl}}"></img>
+    <favorite on-favorite="$ctrl.onFavorite({name: $ctrl.name})" on-remove-favorite="$ctrl.onRemoveFavorite({name: $ctrl.name})" favorited="$ctrl.favorited"></favorite>
+    <div class="card-footer">
+      {{$ctrl.name}}
+    </div>
+  </div>
+</div>

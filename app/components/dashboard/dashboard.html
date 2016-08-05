@@ -1,0 +1,26 @@
+<div class="container-fluid no-padding">
+  <div class="centered">
+    <h1 id="dashboard-header">My Apps</h1>
+    <div class="row no-padding">
+      <div class="col-sm-12">
+        <input type="text" id="dashboard-search" ng-model="userSearchInput" placeholder="Filter by app name"></input>
+      </div>
+    </div>
+
+    <!-- favorited apps -->
+    <h2 class="dashboard-subtitle" ng-show="$ctrl.hasFavoritedApps()">Favorites</h2>
+    <div class="row no-padding">
+      <div class="col-xs-6 col-sm-4 col-md-3 no-padding" ng-repeat="app in $ctrl.favorites | filter:{name:userSearchInput}">
+        <card name="app.name" on-favorite="$ctrl.onAddFavorite({name: name})" on-remove-favorite="$ctrl.onRemoveFavorite({name: name})" favorited="app.favorited"></card>
+      </div>
+    </div>
+
+    <!-- other apps -->
+    <h2 class="dashboard-subtitle" ng-show="$ctrl.allAppsIsNotEmpty()">All Apps</h2>
+    <div class="row no-padding">
+      <div class="col-xs-6 col-sm-4 col-md-3 no-padding" ng-repeat="app in $ctrl.apps | filter:{name:userSearchInput}">
+        <card name="app.name" on-favorite="$ctrl.onAddFavorite({name: name})" on-remove-favorite="$ctrl.onRemoveFavorite({name: name})"></card>
+      </div>
+    </div>
+  </div>
+</div>
